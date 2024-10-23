@@ -97,7 +97,7 @@ def stk_push_request(phone_number, amount, bill_id, description):
         "PartyB": shortcode,     # Business shortcode receiving the payment
         "PhoneNumber": phone_number,
        "CallBackURL": 'https://mere-mavis-wakulima-9f4fea97.koyeb.app/transactions/callback',
-        "AccountReference": f"{transaction.id if transaction.id else 1}_bill_{bill_id}",
+        "AccountReference": f"_bill_{bill_id}",
         "TransactionDesc": description
     }
 
