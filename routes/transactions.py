@@ -96,8 +96,8 @@ def stk_push_request(phone_number, amount, bill_id, description):
         "PartyA": phone_number,  # The phone number initiating the transaction
         "PartyB": shortcode,     # Business shortcode receiving the payment
         "PhoneNumber": phone_number,
-        "CallBackURL": 'https://geographical-euphemia-wazo-tank-f4308d3f.koyeb.app/transactions/callback',
-        "AccountReference": f"{transaction.id}_bill_{bill_id}",  
+       "CallBackURL": 'https://mere-mavis-wakulima-9f4fea97.koyeb.app/transactions/callback',
+        "AccountReference": f"{transaction.id if transaction.id else 1}_bill_{bill_id}",
         "TransactionDesc": description
     }
 
